@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scribbler - Registration</title>
+    <link rel = 'icon' type = 'image/x-icon' href = 'Logo_GIF.gif'>
+	<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+	<style>
+ *{
+ 	margin: 0;
+ 	padding: 0;
+ 	font-family: sans-serif;
+ 	color: #123C69;
+ }
+body {
+	background-color: #EDC7B7;
+	background-position: center;
+	background-size: cover;
+}
+
+.containing{
+  width: 100px;
+  margin: 0 50px;
+  display: flex;
+}
+
+.container{
+	width: 400px;
+	height: 400px;
+	margin: 8% auto;
+	background: #fff;
+	border-radius: 5px;
+	position: relative;
+}
+h3{
+	margin-top: 5px;
+	text-align: center;
+	font-size: 30px;
+	color: #AC3B61;
+	margin-bottom: 40px;
+	margin-left:25px;
+}
+
+p{
+	margin-left: 100px;
+	display: inline-block;
+	margin-right: 10px;
+	font-weight: bold;
+	padding: 12px 5px;
+	
+}
+
+.container form{
+	width: 280px;height: 350px;
+	position: absolute;
+	top: 100px;
+	left: 40px;
+	
+
+}
+
+form input[type = radio]{
+	margin-left: 32px;
+}
+
+form label{
+	font-size: 20px;
+}
+.btn-box{
+	width: 100%;
+	margin: 30px auto;
+	text-align: center;
+}
+
+form button{
+	width:110px;
+	height: 35px;
+	margin-top:40px;
+	margin-left: 100px;
+	background: linear-gradient(to right, #ff105f, #123C69);
+	border-radius: 30px;
+	border: 0;
+	outline: none;
+	color: #fff;
+	cursor: pointer;
+}
+	</style>
+</head>
+<body>
+	<div class = 'containing'>
+		<img src = 'Logo_GIF.gif' width = 50px height= 50px>
+		<h1 style = 'color:#FFF; font-size: 30px; font-family: Plyfair Display;'>  SCRIBBLER </h1>
+	</div>
+ <div class ='container'>
+ 	<form>
+ 		<h3> Lets start! </h3>
+ 		<p style = 'font-size: 25px;'> Are you? </p><br><br>
+              <input type = 'radio' id = 'scribe' name= 'usertype' value = 'scribe'>
+              <label for = 'F'>Scribe</label>
+              <input type = 'radio' id = 'blind' name= 'usertype' value = 'Blind'>
+              <label for = 'M'>Blind Student</label>
+              
+              <button type='button' id = 'Next1'>Next</button></div>
+
+ 	</form>
+</div>
+ <script>
+ 	var Next1 = document.getElementById('Next1');
+ 	var scribe = document.getElementById('scribe');
+ 	var blind = document.getElementById('blind');
+ 	Next1.onclick = function()
+ 	{
+      
+      if(scribe.checked == true)
+      {
+        location.href = "scribe.html";
+      }
+      else if(blind.checked == true)
+      {
+      	location.href = "blind.html";
+      }
+    }
+
+     
+     </script>
+
+</body>
+</html>

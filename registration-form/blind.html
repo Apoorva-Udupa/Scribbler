@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blind Student Registration</title>
+  <link rel = 'icon' type = 'image/x-icon' href = 'Logo_GIF.gif'>
+  <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+  <style>
+     
+   *{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, serif;
+  font-size: 15px;
+}
+
+body{
+  background-image:url();
+  background-color:#EDC7B7;
+  color: #123C69;
+  background-position: top;
+  background-size: cover;
+
+}
+
+.containing{
+  width: 100px;
+  margin: 0 50px;
+  display: flex;
+}
+
+.container{
+  width:750px;
+  height:750px;
+  margin:0% auto;
+  background:#FFF;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+h3{
+  
+  text-align: center;
+  margin-bottom:3px;
+  font-size: 20px;
+  
+  color: #AC3B61;
+}
+h5{
+  text-align: center;
+  font-size: 10px;
+  margin-bottom:40px;
+  font-style: italic;
+}
+p{
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: bold;
+  padding: 17px 5px;
+}
+
+
+.container form{
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  padding-left: 125px;
+  transition: 0.5s;
+
+}
+
+
+form label{
+  font-size: 15px;
+  margin-right: 16px;
+}
+
+.container2 input[type = radio], input[type = checkbox]{
+  margin: 10px 0;
+  padding:20px 5px;
+  width:12px; height: 12px;
+
+}
+
+form input[type = text], input[type = password]{
+  width:70%;
+  padding:10px 5px;
+  margin: 10px 0;
+  border: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+
+
+::placeholder{
+  color:#123C69;
+}
+
+.btn-box{
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+form button{
+  width:110px;
+  height: 35px;
+  margin: 0px 50px 5px 0px;
+  background: linear-gradient(to right, #ff105f, #123C69);
+  border-radius: 30px;
+  border: 0;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#form2{
+  left: 750px;
+
+}
+
+#form3{
+  left: 750px;
+  
+}
+
+
+.step-row{
+  width: 750px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items:center;
+  box-shadow:0 -1px 5px -1px #222;
+  position: relative;
+}
+
+.step-col{
+  width:250px;
+  text-align: center;
+  color: #BAB2B5;
+  position: relative;
+}
+
+#progress{
+  position: absolute;
+  height: 100%;
+  width: 250px;
+  background: linear-gradient(to right, #ff105f, #123C69);
+  transition: 1s;
+}
+#progress::after{
+  content: '';
+  height: 0;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  right:-20px;
+  top: 0;
+  border-left: 20px ;
+  top: 0;
+  border-left: 20px solid #123C69;
+
+}
+
+  </style>
+</head>
+<body>
+  <div class = 'containing'>
+    <img src = 'Logo_GIF.gif' width = 50px height= 50px>
+    <h1 style = 'color:#FFF; font-size: 30px; font-family: Plyfair Display;'>  SCRIBBLER </h1>
+  </div>
+     <div class = 'container'>
+      <form id = 'form1'>
+        <h3> PERSONAL DETAILS </h3>
+        <h5> * marked fields are mandatory</h5>
+           <p> First Name:* </p>
+               <input type = 'text'  placeholder = 'Enter First Name'  required> <br>
+               <p> Last Name:* </p>
+               <input type = 'text' placeholder = 'Enter Last Name' required><br>
+               <p> Mobile No:* </p>
+              <input type = 'text' placeholder = '10 digit Mobile No.' required>
+              <div class = 'container2'>
+              <p> Gender: </p>
+              <input type = 'radio' id = 'F' name= 'Gender' value = 'Female'>
+              <label for = 'F'>Female</label>
+              <input type = 'radio' id = 'M' name= 'Gender' value = 'Male'>
+              <label for = 'M'>Male</label>
+              <input type = 'radio' id = 'o' name= 'Gender' value = 'Other'>
+              <label for = 'o'>Other</label><br>
+              <p>Speaking Proficiency:*</p>
+              <input type = 'checkbox' id = 'eng' name= 'speaking' value = 'ENG'required>
+              <label for = 'eng'>ENG</label>
+              <input type = 'checkbox' id = 'kan' name= 'speaking' value = 'KAN'required>
+              <label for = 'kan'>KAN</label>
+              <input type = 'checkbox' id = 'hindi' name= 'speaking' value = 'HIN'required>
+              <label for = 'hindi'>HIN</label>
+              <input type = 'checkbox' id = 'other' name= 'speaking' value = 'Other'required>
+              <label for = 'other'>Other</label><br>
+              <p> If 'other' </p>
+               <input type = 'text'  placeholder = 'enter other languages'> <br>
+              <p> Do you have an aadhar card?* </p>
+              <input type = 'radio' id = 'y' name= 'aadhar' value = 'yes' required>
+              <label for = 'y'>Yes</label>
+              <input type = 'radio' id = 'n' name= 'aadhar' value = 'no'required>
+              <label for = 'n'>No</label><br>
+              <p> Have you passed matriculation?* </p>
+              <input type = 'radio' id = 'y' name= 'mat' value = 'yes'required>
+              <label for = 'y'>Yes</label>
+              <input type = 'radio' id = 'n' name= 'mat' value = 'no' required>
+              <label for = 'n'>No</label><br>
+              <p style = 'font-size: 13px;'>Please go through the guidelines by clicking on this link- <a href = 'http://www.dmer.org/Guideline_PH%20-11%20April%2011.pdf'>Click here </a></p><br>
+          </div>
+              <div class = 'btn-box'>
+                <button type='button' id = 'Next1'>Next</button></div>
+      </form>
+      
+      <form id = 'form2'>
+        <h3> VISUALLY IMPAIRED STUDENT DETAILS</h3>
+        <h5> Please fill in the details below correctly.</h5>
+              <p> Are you eligible to request a scribe for the examination?</p><br>
+              <input type = 'radio' id = 'y' name= 'req' value = 'yes'>
+              <label for = 'y'>Yes</label>
+              <input type = 'radio' id = 'n' name= 'req' value = 'no' >
+              <label for = 'n'>No</label><br>
+              <p style = 'font-size: 13px;'>To know the eligibility criteria of using a scribe- <a href = 'http://www.dmer.org/Guideline_PH%20-11%20April%2011.pdf'>Click here </a></p><br>
+              <p> Preferred Language in writing the examination? </p><br>
+              <input type = 'checkbox' id = 'eng' name= 'Writing1' value = 'ENG'required>
+              <label for = 'eng'>English</label>
+              <input type = 'checkbox' id = 'kan' name= 'Writing1' value = 'KAN'required>
+              <label for = 'kan'>Kannada</label>
+              <input type = 'checkbox' id = 'hindi' name= 'Writing1' value = 'HIN'required>
+              <label for = 'hindi'>Hindi</label>
+              <input type = 'checkbox' id = 'other' name= 'Writing1' value = 'Other'required>
+              <label for = 'other'>Other</label><br>
+              <p> Do you want to have a practice session with the scribe before the exam? </p>
+              <input type = 'radio' id = 'y' name= 'pd3' value = 'yes'required>
+              <label for = 'y'>Yes</label>
+              <input type = 'radio' id = 'n' name= 'pd3' value = 'no' required>
+              <label for = 'n'>No</label><br>
+              <p> Can you afford travel expenses for the scribe? </p><br>
+              <input type = 'radio' id = 'y' name= 'pd4' value = 'yes'required>
+              <label for = 'y'>Yes</label>
+              <input type = 'radio' id = 'n' name= 'pd4' value = 'no' required>
+              <label for = 'n'>No</label><br>
+              <div class = 'btn-box'>
+                <button type='button' id = 'Back1'>Back</button>
+                <button type='button' id = 'Next2'>Next</button></div>
+      </form>
+
+      <form id = 'form3'>
+        <h3 style = 'margin-bottom: 40px'> CREATE ACCOUNT </h3>
+        <p> Location Details: </p><br>
+        <p> Country: </p>
+               <input type = 'text'  placeholder = 'Country Name'  required> <br>
+               <p> State: </p>
+               <input type = 'text'  placeholder = 'State Name'  required> <br>
+               <p> City: </p>
+               <input type = 'text'  placeholder = 'City Name'  required> <br>
+           <p> Email Id: </p>
+               <input type = 'text'  placeholder = 'example@domain.com'  required> <br>
+               <p> Password: </p>
+               <input type = 'password' placeholder = 'Password' required><br>
+               <p>Confirm Password:</p>
+              <input type = 'password' placeholder = 'Confirm Password' required style = 'width: 60%'>
+
+              <div class = 'btn-box'>
+                <button type='button' id = 'Back2'>Back</button>
+                <button type='button' id = 'Submit1'>Submit</button></div>
+      </form>
+
+      <div class = 'step-row'>
+        <div id = 'progress'></div>
+            <div class = 'step-col'><small>Step 1</small></div>
+            <div class = 'step-col'><small>Step 2</small></div>
+            <div class = 'step-col'><small>Step 3</small></div>
+            
+      </div>
+     </div>
+
+   <script>
+    var Form1 = document.getElementById('form1');
+    var Form2 = document.getElementById('form2');
+    var Form3 = document.getElementById('form3');
+    
+
+
+    var Next1 = document.getElementById('Next1');
+    var Next2 = document.getElementById('Next2');
+    var Back1 = document.getElementById('Back1');
+    var Back2 = document.getElementById('Back2');
+ 
+    var progress =  document.getElementById('progress');
+
+    Next1.onclick = function()
+    {
+      form1.style.left = '-650px';
+      form2.style.left = '8px';
+      progress.style.width = '500px';
+    }
+    Back1.onclick = function()
+    {
+      form1.style.left = '8px';
+      form2.style.left = '650px';
+      progress.style.width = '250px';
+    }
+    Next2.onclick = function()
+    {
+      form2.style.left = '-650px';
+      form3.style.left = '8px';
+      progress.style.width = '750px';
+    }
+    Back2.onclick = function()
+    {
+      form2.style.left = '8px';
+      form3.style.left = '650px';
+      progress.style.width = '500px';
+    }
+    
+   </script>
+
+
+
+</body>
+</html>
