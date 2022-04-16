@@ -33,6 +33,6 @@ The Home page is created in google sites. It includes information about the webs
 The logo for this website displayed above was created in canva - logomaker website. 
 
 ### Registration Form 
-The registration form has 3 html files. There is a one registration form to collect the details of the scribes and another registration form to collect the details of the visually impaired students. Based on the input given by the user in main registration page [![Open in Colab](https://img.shields.io/badge/reg.html-open-ff69b4)](https://github.com/ChandanaGiridhar/SCRIBBLER/blob/main/registration_form/home.html) the user is either directed to scribe registration page or blind student registration page  for further registration. All the details in these pages are marked as mandatory as the information is needed to connect scribes with blind students.
+The registration form has 3 html files. There is a one registration form to collect the details of the scribes and another registration form to collect the details of the visually impaired students. Based on the input given by the user in main registration page [![Open in Colab](https://img.shields.io/badge/reg.html-open-ff69b4)](https://github.com/Apoorva-Udupa/Scribbler/blob/main/registration-form/home.html) the user is either directed to scribe registration page or blind student registration page  for further registration. All the details in these pages are marked as mandatory as the information is needed to connect scribes with blind students.
 
 
